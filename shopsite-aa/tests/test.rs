@@ -14,6 +14,7 @@ fn test_main() {
 	#[derive(Debug, Deserialize, Eq, PartialEq)]
 	struct TestStruct {
 		string: String,
+		#[serde(rename = "“quoted”")] quoted: String,
 		value_without_space: String,
 		seq_empty1: Vec<String>,
 		seq_empty2: Vec<String>,
@@ -32,6 +33,7 @@ fn test_main() {
 	).unwrap();
 
 	assert_eq!(ts.string, "string_value");
+	assert_eq!(ts.quoted, "“value”");
 	assert_eq!(ts.value_without_space, "Look ma, no space!");
 	assert_eq!(ts.seq_empty1, Vec::<String>::new());
 	assert_eq!(ts.seq_empty2, Vec::<String>::new());

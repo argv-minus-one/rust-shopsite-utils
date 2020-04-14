@@ -28,3 +28,6 @@ enum: Third|First|Second
 # Optional values
 some: Hello
 none: 
+
+# Key and value with non-ASCII characters
+“quoted”: “value”
