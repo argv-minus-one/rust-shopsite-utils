@@ -1,5 +1,5 @@
 use serde::{Deserialize, Deserializer as _};
-use shopsite_aa as aa;
+use shopsite_aa::de as aa;
 use std::path::Path;
 
 #[test]
