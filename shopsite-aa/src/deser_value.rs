@@ -26,11 +26,12 @@ macro_rules! deserialize_with_other {
 macro_rules! deserialize_with_from_str {
 	($deserialize_name:ident, $visit_name:ident, $error_kind:ident) => {
 		fn $deserialize_name<V: Visitor<'de>>(mut self, visitor: V) -> Result<V::Value> {
+			let start_pos = self.de.pos.clone();
 			self.fill_buf_auto()?;
 			self.de.decode_buf_all();
 			visitor.$visit_name (
 				FromStr::from_str(&self.de.buf_s[..])
-				.map_err(|error| Error::$error_kind { error: error, pos: self.de.pos.clone() })?
+				.map_err(|error| Error::$error_kind { error: error, pos: start_pos })?
 			)
 		}
 	}
