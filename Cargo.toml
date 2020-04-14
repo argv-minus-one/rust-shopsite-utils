@@ -1,0 +1,2 @@
+[workspace]
+members = ["shopsite-aa", "make-shopsite-backup"]

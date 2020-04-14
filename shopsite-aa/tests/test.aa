@@ -1,0 +1,30 @@
+# This is a comment. It should be ignored. Blank lines should also be ignored.
+
+# A plain string value.
+string: string_value
+
+# A value in which there is no space after the colon.
+value_without_space:Look ma, no space!
+
+# Two empty sequences.
+seq_empty1:
+seq_empty2: 
+
+# A sequence with only one element.
+seq_one: Hello
+
+# A sequence with several elements.
+seq_multi: Hello,|world!
+
+# A sequence with empty elements.
+seq_with_empty: |Hello,||world!|
+
+# A tuple with elements of various types.
+tuple: Hello|42|true|world|!
+
+# Several enum values.
+enum: Third|First|Second
+
+# Optional values
+some: Hello
+none: 

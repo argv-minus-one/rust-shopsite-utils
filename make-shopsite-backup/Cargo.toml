@@ -1,0 +1,13 @@
+[package]
+name = "make-shopsite-backup"
+version = "0.1.0"
+authors = []
+edition = "2018"
+description = "Generates a backup of a (non-Enterprise) ShopSite instance."
+
+[dependencies]
+serde = { version = "1.0.106", features = ["derive"] }
+toml = "0.5.6"
+structopt = "0.3.12"
+clap = "2.33.0"
+shopsite-aa = { path = "../shopsite-aa" }
