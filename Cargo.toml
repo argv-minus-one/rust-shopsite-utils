@@ -1,2 +1,2 @@
 [workspace]
-members = ["shopsite-aa", "make-shopsite-backup"]
+members = ["shopsite-aa", "make-shopsite-backup", "shopsite-aa2json"]
