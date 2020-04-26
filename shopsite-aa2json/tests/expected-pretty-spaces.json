@@ -1,0 +1,14 @@
+{
+   "string": "string_value",
+   "value_without_space": "Look ma, no space!",
+   "seq_empty1": "",
+   "seq_empty2": "",
+   "seq_one": "Hello",
+   "seq_multi": "Hello,|world!",
+   "seq_with_empty": "|Hello,||world!|",
+   "tuple": "Hello|42|true|world|!",
+   "enum": "Third|First|Second",
+   "some": "Hello",
+   "none": "",
+   "“quoted”": "“value”"
+}

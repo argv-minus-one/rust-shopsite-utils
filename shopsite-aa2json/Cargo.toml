@@ -11,3 +11,6 @@ serde_json = "1.0.51"
 serde-transcode = "1.1.0"
 shopsite-aa = { path = "../shopsite-aa" }
 structopt = "0.3.12"
+
+[dev-dependencies]
+assert_cmd = "1.0.1"
